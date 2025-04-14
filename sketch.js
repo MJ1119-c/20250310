@@ -43,9 +43,9 @@ function setup() {
 
   // 建立選擇題
   radio = createRadio();
-  radio.style('font-size', '30px');
+  radio.style('font-size', '20px');
   radio.style('font-weight', 'bold');
-  radio.position((windowWidth - radio.size().width) / 2+830, (windowHeight / 2) - 100);
+  radio.position((windowWidth - radio.size().width) / 2+230, (windowHeight / 2) - 100);
 
   // 建立填空題
   input = createInput();
@@ -57,7 +57,7 @@ function setup() {
   submitButton = createButton('送出');
   submitButton.style('font-size', '30px');
   submitButton.style('font-weight', 'bold');
-  submitButton.position((windowWidth - submitButton.size().width) / 2, (windowHeight / 2));
+  submitButton.position((windowWidth - submitButton.size().width) / 2, (windowHeight / 2) + 50);
   submitButton.mousePressed(checkAnswer);
 
   // 建立結果顯示段落
